@@ -1,16 +1,16 @@
 <!-- Jumbtron -->
-<div class="row">
+<div class="row"> <!-- using bootstrap grid sysytem -->
   <div class="col-xs-12">
-  <div class="jumbotron">
-  <%= @username %>
+  <div class="jumbotron"> <!-- creating jumbotron view from bootstrap -->
+  <%= @username %> <!-- ruby function to display usernames on jumbotron -->
 </div>
   </div>
 </div>
 
 <!-- creating pannels for profile -->
-<div class="row">
+<div class="row"> <!-- using bootstrap grid sysytem -->
 <div class="col-xs-3">
-  <div class="panel panel-default">
+  <div class="panel panel-default"> <!-- creating pannels for grid sysytm to render our views in pannels -->
   <div class="panel-body">
   <p>Profile</p>
 </div>
@@ -18,32 +18,26 @@
 </div>
 
 <div class="col-xs-6">
-  <%= render 'components/post_form' %>
-  <% for @p in @posts %>
-  <div class="panel panel-default">
+  <%= render 'components/post_form' %> <!-- code for rendering posts for nice view -->
+  <% for @p in @posts %>  <!-- for displaying posts -->
+  <div class="panel panel-default"> <!-- creating pannels for grid sysytm to render our views in pannels -->
   <div class="panel-body">
-  <p><%= @p.content %></p>
+  <p><%= @p.content %></p> <!-- to display post content -->
 </div>
 </div>
-<% end %>
+<% end %> <!-- ruby function for end -->
 </div>
 
 <div class="col-xs-3">
-  <div class="panel panel-default">
+  <div class="panel panel-default"> <!-- creating pannels for grid sysytm to render our views in pannels -->
   <div class="panel-body">
   <p>Who To Follow</p>
 </div>
 </div>
-<div class="panel panel-default">
+<div class="panel panel-default"> <!-- creating pannels for grid sysytm to render our views in pannels -->
   <div class="panel-body">
     <p>trends</p>
     </div>
     </div>
 </div>
 </div>
-
-
-
-
-<!-- row 2 for trends-->
-

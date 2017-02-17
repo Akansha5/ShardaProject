@@ -1,5 +1,6 @@
-<% if !user_signed_in? %>
-   <%= render '/layouts/nav_guest' %>
+<!-- defining a dynamic navbar for users -->
+<% if !user_signed_in? %> <!-- function to find user signed in or not -->
+   <%= render '/layouts/nav_guest' %> <!-- rendering guest navbar -->
 <% else %>
-   <%= render '/layouts/nav_user' %>
+   <%= render '/layouts/nav_user' %> <!-- rendering user navbar -->
 <% end %>

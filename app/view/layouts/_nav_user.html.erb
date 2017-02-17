@@ -1,3 +1,5 @@
+<!-- defining navbar from twitter bootstrap -->
+<!-- is an navbar for users -->
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -14,8 +16,8 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="/home">Home <span class="sr-only">(current)</span></a></li>
-        <li><a href="/explore">Explore</a></li>
+        <li><a href="/home">Home <span class="sr-only">(current)</span></a></li> <!-- defining href for home -->
+        <li><a href="/explore">Explore</a></li><!-- defining href for Explore -->
       </ul>
       <ul class="nav navbar-nav navbar-right">
           <form class="navbar-form navbar-right">
@@ -26,15 +28,15 @@
       </form>
         <li><a href="#">Tweet</a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><%= current_user.username %><span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><%= current_user.username %><span class="caret"></span></a> <!-- ruby function for printing usernames -->
           <ul class="dropdown-menu">
             <li><a href="/user/<%= current_user.username %>">Profile</a></li>
             <li role="separator" class="divider"></li>
             <li><a href="#">Help</a></li>
             <li role="separator" class="divider"></li>
-            <li><%= link_to('Edit profile', edit_user_registration_path) %></li>
+            <li><%= link_to('Edit profile', edit_user_registration_path) %></li> <!-- devise gem function to edid users -->
             <li role="separator" class="divider"></li>
-            <li><%= link_to('Log out', destroy_user_session_path, :method => :delete) %></li>
+            <li><%= link_to('Log out', destroy_user_session_path, :method => :delete) %></li> <!-- ruby function for logout -->
           </ul>
         </li>
       </ul>

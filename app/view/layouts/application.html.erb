@@ -9,10 +9,10 @@
   </head>
 
   <body>
-    <%= render '/layouts/nav' %>
+    <%= render '/layouts/nav' %> <!-- rengering to _nav.html.erb for calling dynamic navbar -->
     <div class="container">
-      <span class="notice"><%= notice %></span>
-       <span class="alert"><%= alert %></span>
+      <span class="notice"><%= notice %></span> <!--aleart notfications for user signedin or logout -->
+       <span class="alert"><%= alert %></span> <!--aleart notfications for user signedin or logout -->
     <%= yield %>
   </div>
   </body>
