@@ -1,24 +1,8 @@
-# README
+*The project mainly focuses on the college social networking system which helps the students to interact with each other and solve their problems.The students can create official and unofficial groups of their interest and post the news regarding the happenings in the college.Anyone can join the groups and any one can post in to the groups as only the admin of the group can manipulate the data.Students needs to sign in and register in order to connect to the website and to share information and for obtaining shared views and interests.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* My team member: Womesh Chandra Bhargav
+https://github.com/womesh/ShardaProject
 
-Things you may want to cover:
+* Ruby Version : 2.4.0p0
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Rails Version : 5.0.2
