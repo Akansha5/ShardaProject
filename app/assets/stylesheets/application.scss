@@ -9,9 +9,80 @@
  * compiled file so the styles you add here take precedence over styles defined in any styles
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
-
+ *
  */
-// "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+ /* importing bootstraps sprockets */
+@import "bootstrap-sprockets";
+@import "bootstrap";
 
-@import "bootstrap-sprockets"; // imported bootstrap sprockets for bootstrap scss gem
-@import "bootstrap"; // imported bootstrap sprockets for bootstrap scss gem
+body {
+    background-color: rgba(212, 216, 212, 0.25); /* defines background color of body */
+}
+.rounded-img {
+    border-radius: 5%; /* defining rounded border for image */
+}
+.navbar {
+    background-color: white; /* defining background color for navigation bar */
+}
+.navbar-brand { /* defining absolute position for navbrand image and giving its margins */
+    position: absolute;
+    left: 50%;
+    margin-right: 25px !important;
+    display: block;
+}
+.post-panel { /*defining decreasing spaces for post panel */
+    margin-top: -21px;
+}
+.post-title { /* defining text align and margin for post title */
+    text-align: left;
+    margin-left: 15px;
+}
+.post-content { /* defining margin and text align for post content */
+    text-align: left;
+    margin-left: 15px;
+}
+.post-links { /* defining alignment left for post links */
+    text-align: left;
+}
+.post-owner { /* defining color for the post */
+    color: black;
+    font-weight: bold;
+}
+.post-creation { /* defining transparency for post creation */
+    opacity: 0.7;
+}
+.g-links { /* class which defines bootstarp glyphicons */
+    opacity: 0.4;
+    font-size: 120%;
+    margin-right: 75px;
+}
+.post-form-panel { /* defining decreasing spaces for post form panel */
+    margin-bottom: -21px;
+}
+.panel-image img.panel-image-preview {
+    width: 100%;
+    border-radius: 4px 4px 0px 0px;
+}
+.panel-heading ~ .panel-image img.panel-image-preview {
+    border-radius: 0px;
+}
+.panel-image ~ .panel-body, .panel-image.hide-panel-body ~ .panel-body {
+    overflow: hidden;
+}
+.panel-image ~ .panel-footer a {
+    padding: 0px 10px;
+    font-size: 1.3em;
+    color: rgb(100, 100, 100);
+}
+.panel-image.hide-panel-body ~ .panel-body {
+    height: 0px;
+    padding: 0px;
+}
+.panel-footer { /* defining white color for panel footer */
+    background-color: white;
+}
+.profile-banner { /* defining height width and margin for profile banner */
+    width: 100%;
+    height: 500px;
+    margin-top: -21px;
+}
